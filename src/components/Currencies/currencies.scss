@@ -1,0 +1,45 @@
+@use 'src/styles/vars';
+
+.currencies {
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  color: vars.$colorMain;
+  max-height: 60vh;
+  overflow-y: auto;
+
+  &__search {
+    margin: 1rem 0;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    width: 90%;
+    color: vars.$colorMain;
+    padding-left: 1rem;
+
+    &::placeholder {
+      color: vars.$colorAlt;
+      font-family: inherit;
+
+    }
+  }
+  
+  &__list {
+    &__elem {
+      
+      border-bottom: 1px solid vars.$colorAlt;
+      font-weight: vars.$currenciesSize;
+      padding: 1rem 0 1rem 0.8rem;
+      cursor: pointer;
+      transition: all vars.$slow ease-in-out;
+      
+      &:hover {
+        background: vars.$colorAlt;
+        transition: all vars.$fast ease-in-out;
+      }
+
+      &:first-child {
+        border-top: 1px solid vars.$colorAlt;
+      }
+    }
+  }
+}

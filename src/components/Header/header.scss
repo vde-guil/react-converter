@@ -1,0 +1,27 @@
+@use 'src/styles/vars';
+
+.header {
+  color: vars.$colorLight;
+  background: vars.$colorMain;
+  padding: 2.2rem 0;
+  text-align: center;
+  &__title {
+    font-weight: vars.$titleSize;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  &__input {
+    background-color: vars.$colorAlt;
+    border: none;
+    height: 2rem;
+    color: vars.$colorMain;
+    font-size: 1.3rem;
+  }
+
+  &__amount {
+    display: block;
+    color: vars.$colorAlt;
+    margin-top: 0.8rem;
+  }
+
+}

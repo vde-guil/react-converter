@@ -1,0 +1,9 @@
+@use 'src/styles/vars';
+
+.app {
+  width: 50vw;
+  margin: 0 auto;
+  border: 15px solid vars.$colorAlt;
+  font-weight: vars.$textSize;
+  font-size: 1.4rem;
+}

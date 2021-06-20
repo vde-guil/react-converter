@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+.results {
+
+  text-align: center;
+  padding: 2rem 0;
+  color: vars.$colorMain;
+  &__value {
+    font-weight: vars.$titleSize;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  &__currency {
+  }
+}
